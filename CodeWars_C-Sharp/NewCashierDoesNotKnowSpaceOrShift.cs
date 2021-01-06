@@ -32,7 +32,7 @@ namespace CodeWars
                 while (buffer.Contains(itemLowerCase))
                 {
                     formattedOrder.Append(item + " ");
-                    buffer = buffer.Remove(input.IndexOf(itemLowerCase), itemLowerCase.Length);
+                    buffer = buffer.Remove(buffer.IndexOf(itemLowerCase), itemLowerCase.Length);
                 }
             }
 
